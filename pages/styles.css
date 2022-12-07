@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+body {
+    background: url(https://i.imgur.com/FnJbmo1.jpg) no-repeat top center #8ac1d6;
+    background-size: cover;
+}
+
 .App {
-    font-family: sans-serif;
+    font-family: 'Mountains of Christmas';
     text-align: center;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 * {
@@ -9,6 +20,45 @@
     margin: 0;
 }
 
-body {
-    background-color: springgreen;
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 2px #3c323261 dotted;
+    border-radius: 0.25rem;
+    padding: 0.5em 0 1em 0;
+    width: 50%;
+}
+
+
+/* .listPresents li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    z-index: -1;
+    border-radius: 0.75rem;
+    background: repeating-linear-gradient(-45deg, #f1faee 0, #f1faee 0.5rem, #e63946 0.5rem, #e63946 1rem);
+    background-size: 1.44rem 1.44rem;
+} */
+
+.title-1 {
+    font-size: 3rem;
+    color: #9c163f;
+    display: block;
+    transform: rotate(-10deg);
+    /* margin: 1em 0; */
+    /* padding: 0.5em; */
+}
+
+.listPresents {
+    /* position: relative; */
+    list-style: none;
+}
+
+.listPresents li {
+    color: #583ea5;
 }
